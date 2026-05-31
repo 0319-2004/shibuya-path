@@ -25,6 +25,12 @@ npm run dev
 
 現在の案内画像は、操作を検証するためのデモ画像です。次にMapillary APIから経路付近の画像列を取得し、実際の街路画像へ置き換えます。APIキーは公開リポジトリへ保存せず、公開時はサーバー側で管理します。
 
+## Mapillary API
+
+Vercelの環境変数に`MAPILLARY_ACCESS_TOKEN`を登録します。Client TokenはGitHubのファイルやチャットに貼り付けません。
+
+`/api/mapillary-images`は、渋谷周辺の小さな範囲に限定して公開画像を取得します。
+
 ## GitHub Pages
 
 静的なデモ版はGitHub Pagesで公開できます。追加のビルド処理は不要です。GitHubへ送信したあと、リポジトリ設定の`Pages`で公開元に`GitHub Actions`を選択してください。
